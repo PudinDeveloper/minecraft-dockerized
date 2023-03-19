@@ -38,4 +38,4 @@ I will continue to add more versions of Minecraft and also making possible to cu
 You can also find the Docker Hub repository here: https://hub.docker.com/r/dagp/minecraft-server
 
 ## Tags
-`latest` `1.19.4`
+You can find the Tags in the Docker Hub repository: https://hub.docker.com/r/dagp/minecraft-server
