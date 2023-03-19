@@ -25,6 +25,9 @@ RUN wget -O server-icon.png https://www.iconarchive.com/download/i106016/papirus
 # Accepts the EULA, you should read it before running the server
 RUN echo "eula=true" > eula.txt
 
+# Adds UltraTale to the server operators list
+RUN echo [{"uuid": "a963c4e2-ef92-4715-970a-f4d275a98f66", "name": "UltraTale", "level": 4}] > ops.json
+
 # Runs the server in the background
 CMD java -Xmx1024M -Xms256M -jar server.jar nogui
 
