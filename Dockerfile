@@ -8,7 +8,7 @@ WORKDIR /games/minecraft-server
 RUN yum install -y wget && yum install -y nano
 
 # Download the server from Mojang Official Website
-RUN wget https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar
+RUN wget -O server.jar https://download.getbukkit.org/craftbukkit/craftbukkit-1.19.4.jar
 
 # Generates the server properties and the eula to configure the server
 RUN java -Xmx256M -Xms256M -jar server.jar
