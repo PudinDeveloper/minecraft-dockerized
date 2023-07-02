@@ -8,7 +8,7 @@ WORKDIR /games/minecraft-server
 RUN yum install -y wget && yum install -y nano
 
 # Download the server from Mojang Official Website
-RUN wget https://piston-data.mojang.com/v1/objects/8f3112a1049751cc472ec13e397eade5336ca7ae/server.jar
+RUN wget https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar
 
 # Generates the server properties and the eula to configure the server
 RUN java -Xmx256M -Xms256M -jar server.jar
@@ -26,7 +26,7 @@ RUN wget -O server-icon.png https://www.iconarchive.com/download/i106016/papirus
 RUN echo "eula=true" > eula.txt
 
 # Runs the server in the background
-CMD java -Xmx1024M -Xms256M -jar server.jar nogui
+CMD java -Xmx2048M -Xms1024M -jar server.jar nogui
 
 # Exposes the port 25565 to the host
 # Remember to use -p 25565:25565 when running

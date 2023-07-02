@@ -3,8 +3,8 @@
 ## Introduction
 Hello, this is my own creation of a Minecraft server that automatically starts when executing the Docker Run command.
 
-By default this server runs with the next configuration:
-- 1 GB of RAM.
+By default (latest tag) this server runs with the next configuration:
+- 2 GB of RAM.
 - Server MOTD: Dockerized Minecraft.
 - Default max players: 100.
 - Server Icon: https://www.iconarchive.com/download/i106016/papirus-team/papirus-apps/minecraft.64.png.
